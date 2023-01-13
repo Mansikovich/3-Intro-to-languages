@@ -1,0 +1,32 @@
+using System;
+
+namespace ConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.Write("Введите Ах ");
+            double ax=double.Parse(Console.ReadLine());
+           Console.Write("Введите Аy ");
+            double ay=double.Parse(Console.ReadLine()); 
+            Console.Write("Введите Аz ");
+            double az=double.Parse(Console.ReadLine());
+            Console.Write("Введите Bx ");
+            double bx=double.Parse(Console.ReadLine()); 
+            Console.Write("Введите By ");
+            double by=double.Parse(Console.ReadLine()); 
+            Console.Write("Введите Bz ");
+            double bz=double.Parse(Console.ReadLine());
+
+                double d = Math.Sqrt(Math.Pow(bx-ax, 2) + Math.Pow(by-ay, 2) + Math.Pow(bz-az, 2));
+                Console.WriteLine(d);
+            
+            
+
+
+        }
+
+    }
+}
